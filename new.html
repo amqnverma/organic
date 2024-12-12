@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Additional styles -->
+  <style>
+    .instagram-section {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      height: 40vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .instagram-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .instagram-header h2 {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .view-all-button {
+      padding: 10px 20px;
+      font-size: 14px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .swiper {
+      width: 100%;
+      height: calc(100% - 60px); /* Adjust height to fit within section */
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .modal-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 90%;
+      max-height: 90%;
+      overflow-y: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    .modal-content img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #ff0000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Instagram Section -->
+  <div class="instagram-section">
+    <div class="instagram-header">
+      <h2>Instagram Posts</h2>
+      <button class="view-all-button" onclick="showModal()">View All</button>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./1.png" alt="Slide 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://via.placeholder.com/600x600" alt="Slide 2">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://via.placeholder.com/600x600" alt="Slide 3">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://via.placeholder.com/600x600" alt="Slide 4">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://via.placeholder.com/600x600" alt="Slide 5">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://via.placeholder.com/600x600" alt="Slide 6">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://via.placeholder.com/600x600" alt="Slide 7">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://via.placeholder.com/600x600" alt="Slide 8">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://via.placeholder.com/600x600" alt="Slide 9">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal()">Close</button>
+      <!-- Add your 50+ images here -->
+      <img src="https://via.placeholder.com/600x600" alt="Slide 1">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 2">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 3">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 4">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 5">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 6">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 7">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 8">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 9">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 1">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 2">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 3">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 4">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 5">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 6">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 7">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 8">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 9">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 1">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 2">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 3">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 4">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 5">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 6">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 7">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 8">
+      <img src="https://via.placeholder.com/600x600" alt="Slide 9">
+      <!-- Add more images as needed -->
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        }
+      }
+    });
+
+    function showModal() {
+      document.getElementById("modal").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

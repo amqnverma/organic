@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        #loader {
+            height: 100%;
+            width: 100%;
+            /* background-color: #000; */
+            background-image: url(./1920-X-600-footer-option.webp);
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            transition: all ease 0.7s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #loader h1 {
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+            /* background: linear-gradient(to right rgb(229, 202, 202) , orangered);
+            -webkit-background-clip: text; */
+            position: absolute;
+            opacity: 0;
+            animation-name: load;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+        }
+
+        #loader h1:nth-child(2) {
+            animation-delay: 2s;
+        }
+
+        #loader h1:nth-child(3) {
+            animation-delay: 3s;
+        }
+
+        @keyframes load {
+            0% {
+                opacity: o;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header class="fixed-top">
+        <!-- <div id="loader">
+            <h1>KYA BAAT HAI </h1>
+            <h1>Yaha Aaloo milyga</h1>
+            <h1>Or kuch nhi</h1>
+        </div> -->
+        <nav class="navbar_1 ">
+            <div class="logo">
+                <!-- <a href="#"><img src="./logo.png" alt="Logo" width="50px"></a> -->
+                <h2> Organic</h2>
+            </div>
+
+            <div class="contact-info">
+
+                <a href="mailto:info@example.com"><i class="far fa-envelope"></i> info@example.com</a>
+
+                <a href="tel:+1234567890"><i class="fas fa-phone"></i> +1 (234) 567-890</a>
+
+
+
+            </div>
+            <div class="shoppingicon">
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                &nbsp;
+                <a href=""><i class="fa-solid fa-user"></i></a>
+            </div>
+
+            <button class="navbar-toggler menu" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars-staggered  menu"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header logo">
+                    <h2> Organic</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ol class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li><a class="Inner_nav_link" href="#">Home</a></li>
+                        <li><a class="Inner_nav_link" href="#">Blog</a></li>
+                        <li><a class="Inner_nav_link" href="#">Brands</a></li>
+                        <li><a class="Inner_nav_link" href="#">Quality</a></li>
+                        <li><a class="Inner_nav_link" href="#">Reach us</a></li>
+                        <li><a class="Inner_nav_link" href="#">Categories</a></li>
+                        <li><a class="Inner_nav_link" href="#">Testimonial</a></li>
+                        <li><a class="Inner_nav_link" href="#">Get a Quote</a></li>
+                        <div class="inner_content_info">
+
+                            <a href="mailto:info@example.com"><i class="far fa-envelope"></i> info@example.com</a>
+
+                            <a href="tel:+1234567890"><i class="fas fa-phone"></i> +91 865 157 7000</a>
+
+                        </div>
+                        <div class="inner_social-icon">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </ol>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- second header -->
+    <section>
+        <div class="second_header">
+            <ul class="second_header_ul">
+                <li><a class="nave2_link" href="#">Home</a></li>
+                <li><a class="nave2_link" href="#">Quality</a></li>
+                <li><a class="nave2_link" href="#">Categories</a></li>
+                <li><a class="nave2_link" href="#">Blog</a></li>
+                <li><a class="nave2_link" href="#">Brands</a></li>
+                <li><a class="nave2_link" href="#">Testimonial</a></li>
+                <!-- <li><a class="nave2_link" href="#">Reach us</a></li>
+        <li><a class="nave2_link" href="#">Get a Quote</a></li> -->
+
+            </ul>
+        </div>
+    </section>
+
+
+    <main>
+        <div class="hero ">
+            <img src="./91.jpeg" class="" alt="">
+            <div class="heading">
+                <p>Its All Organic & Natural Here</p>
+                <h1 class="lead">Organic Products</h1>
+                <h2>for a better world</h2>
+                <button class="btn btn-dark">Read More</button>
+            </div>
+        </div>
+
+        <!---------------second---------------->
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col">
+                    <div class="second_in">
+                        <div class="second_in_icon"><img src="./credit-cart.png" alt="" style="width: 50px;"></div>
+                        Secure Payment
+                        <p>Dolor sit amet, consectetur adipisicing</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="second_in">
+                        <div class="second_in_icon"><img src="./authenticity.png" alt="" style="width: 50px;"></div>
+                        Orignal Products
+                        <p>Dolor sit amet, consectetur adipisicing</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="second_in">
+                        <div class="second_in_icon"><img src="./curator.png" alt="" style="width: 50px;"></div>
+                        Curated Products
+                        <p>Dolor sit amet, consectetur adipisicing</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="second_in">
+                        <div class="second_in_icon"><img src="./24-hour-service.png" alt="" style="width: 50px;"></div>
+                        24 Hour Service
+                        <p>Dolor sit amet, consectetur adipisicing</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <!-----------------Featured Products--------------->
+        <div class="container card-container">
+            <div class="card_feactured">
+                <div class="text">
+                    <h3>VEGETABLE</h3>
+                    <h1>GREEN WORLD</h1>
+                    <p>Get 40% OFF on selected itmes</p>
+                    <button class="btn btn-dark">Read More</button>
+                </div>
+                <img src="./24646-6-vegetable-photos.png" alt="Image 1">
+            </div>
+            <div class="card_feactured fresh_fruits_2">
+                <div class="text fresh_fruits">
+                    <h3>FRESH FRUITS</h3>
+                    <h1>HEALTHY FOOD</h1>
+                    <p>Get 60% OFF on selected itmes</p>
+                    <button class="btn btn-dark fresh_fruits_button">Read More</button>
+                </div>
+                <img class="fresh_fruits_img" src="./Strawberry.png" alt="Image 2">
+            </div>
+        </div>
+        <br>
+        <!---------------top products------------------->
+        <div class=" container text-center top-product">
+            <h1 class=""><i>&horbar;&horbar;&horbar;</i> Featured Products <i>&horbar;&horbar;&horbar;</i></h1>
+            <div class=" row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card top-products">
+                        <span class="badge">$45</span>
+                        <img src="./1.png" class="" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Products title</h5>
+                            <p class="card-text">Vegetable</p>
+                        </div>
+                        <button><i class="fa-solid fa-bag-shopping"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card top-products">
+                        <span class="badge">$45</span>
+                        <img src="./2.png" class="" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Products title</h5>
+                            <p class="card-text">Vegetable</p>
+                        </div>
+                        <button><i class="fa-solid fa-bag-shopping"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card top-products">
+                        <span class="badge">$45</span>
+                        <img src="./1.png" class="" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Products title</h5>
+                            <p class="card-text">Vegetable</p>
+                        </div>
+                        <button><i class="fa-solid fa-bag-shopping"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card top-products">
+                        <span class="badge">$45</span>
+                        <img src="./2.png" class="" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Products title</h5>
+                            <p class="card-text">Vegetable </p>
+                        </div>
+                        <button><i class="fa-solid fa-bag-shopping"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-------------------Deal of the day section--------------------->
+
+        <div class="container-fluid text-center Deal_of_day">
+            <h4 class=""> Deal of the Day</h4>
+            <div class="deal_of_day">
+                <div>
+                    <p id="days">00</p>
+                    <samp>Days</samp>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <samp>Hours</samp>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <samp>Minutes</samp>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <samp>Seconds</samp>
+                </div>
+            </div>
+        </div>
+        <div class="DOD_products ">
+            <div class="product text-center">
+                <img src="./lemon.jpg" alt="" width="150px" height="100px">
+                <div class="details">
+                    <p class="name">Product 1</p>
+                    <p class="price">$10</p>
+                </div>
+            </div>
+            <div class="product text-center">
+                <img src="./2.png" alt="" width="150px" height="100px">
+                <div class="details">
+                    <p class="name">Product 1</p>
+                    <p class="price">$10</p>
+                </div>
+            </div>
+            <div class="product text-center">
+                <img src="./1.png" alt="" width="150px" height="100px">
+                <div class="details">
+                    <p class="name">Product 1</p>
+                    <p class="price">$10</p>
+                </div>
+            </div>
+            <div class="product text-center">
+                <img src="./lemon.jpg" alt="" width="150px" height="100px">
+                <div class="details">
+                    <p class="name">Product 1</p>
+                    <p class="price">$10</p>
+                </div>
+            </div>
+            <div class="product text-center">
+                <img src="./1.png" alt="" width="150px" height="100px">
+                <div class="details">
+                    <p class="name">Product 1</p>
+                    <p class="price">$10</p>
+                </div>
+            </div>
+            <div class="product text-center">
+                <img src="./2.png" alt="" width="150px" height="100px">
+                <div class="details">
+                    <p class="name">Product 1</p>
+                    <p class="price">$10</p>
+                </div>
+            </div>
+
+            <!-- Repeat similar structure for other products -->
+        </div>
+        <button class="DOD_products-BTN ">VIEW ALL PRODUCT</button>
+
+        <!-------------------------logo slider------------------------>
+        <div class="container-fluid">
+            <p class="text-center logo_text">Our Delivery Partner will make you happy!</p>
+            <div class="logos">
+                <div class="logos-slide">
+                    <img src="./logog/217.svg" />
+                    <img src="./logog/218.svg" />
+                    <img src="./logog/220.svg" />
+                    <img src="./logog/221.svg" />
+                    <img src="./logog/217.svg" />
+                    <img src="./logog/218.svg" />
+                    <img src="./logog/220.svg" />
+                    <img src="./logog/221.svg" />
+                </div>
+
+                <div class="logos-slide">
+                    <img src="./logog/217.svg" />
+                    <img src="./logog/218.svg" />
+                    <img src="./logog/220.svg" />
+                    <img src="./logog/221.svg" />
+                    <img src="./logog/217.svg" />
+                    <img src="./logog/218.svg" />
+                    <img src="./logog/220.svg" />
+                    <img src="./logog/221.svg" />
+                </div>
+            </div>
+        </div>
+        <!------------------------New seltter------------------------->
+        <div class="newsletter">
+            <div>
+                <h3>NEVER MISS ANOTHER UPDATE</h3>
+                <P>Be the first to know! Get the latest news on Organic, straight in to your inbox.</P>
+            </div>
+            <div class="newsletter-input">
+                <label for=""></label>
+                <input type="text" name="" id="" placeholder=" Eneter you email address">
+                <button>subscribe</button>
+            </div>
+        </div>
+
+    </main>
+    <!-------------------------footer------------------------>
+    <footer class="footer">
+        <video class="footer_video" muted="" loop="" autoplay
+            src="v video.mp4" type="video/mp4">
+        </video>
+
+        <div class="container">
+            <div class="footer_inner">
+                <div class="c-footer">
+                    <div class="layout">
+                        <div class="layout_item w-50">
+
+                            <div class="logo">
+                                <h2>Organic</h2>
+
+                                <p class="newsletter_title">Get updates on fun stuff you probably want to know about in
+                                    your inbox.</p>
+
+                            </div>
+                        </div>
+
+                        <div class="layout_item w-25">
+                            <nav class="c-nav-tool">
+                                <h4 class="c-nav-tool_title">Menu</h4>
+                                <ul class="c-nav-tool_list">
+                                    <li>
+                                        <a href="/collections/all" class="c-link">Shop All</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/pages/about-us" class="c-link">About Us</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/blogs/community" class="c-link">Community</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="c-link">Vibes</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+
+                        <div class="layout_item w-25">
+                            <nav class="c-nav-tool">
+                                <h4 class="c-nav-tool_title">Support</h4>
+                                <ul class="c-nav-tool_list">
+
+                                    <li class="c-nav-tool_item">
+                                        <a href="/pages/shipping-returns" class="c-link">Shipping &amp; Returns</a>
+                                    </li>
+
+                                    <li class="c-nav-tool_item">
+                                        <a href="/pages/help" class="c-link">Help &amp; FAQ</a>
+                                    </li>
+
+                                    <li class="c-nav-tool_item">
+                                        <a href="/pages/terms-conditions" class="c-link">Terms &amp; Conditions</a>
+                                    </li>
+
+                                    <li class="c-nav-tool_item">
+                                        <a href="/pages/privacy-policy" class="c-link">Privacy Policy</a>
+                                    </li>
+
+                                    <li class="c-nav-tool_item">
+                                        <a href="/pages/contact" class="c-link">Contact</a>
+                                    </li>
+
+                                    <li class="c-nav-tool_item">
+                                        <a href="/account/login" class="c-link">
+                                            Login
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-icons">
+
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="second-footer">
+        <p>&copy; 2024 Organic. All rights reserved.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
